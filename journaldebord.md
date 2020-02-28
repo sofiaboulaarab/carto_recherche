@@ -10,6 +10,38 @@ Journal d'apprentissage.
 > Identifier les typologies d'établissement de l'éducation nationale, hors éducation nationale
 > Exemple e-carto, banque des territoires : une carte centrée sur la France, avec les filtres, des points sur la carte.
 
+## Session 5 — 20 mars 2020
+
+Vendredi 20 mars de 9h00 à 11h30, via whereby.com.
+
+## Session 4 — 28 février 2020
+
+Vendredi 28 février de 9h30 à 12h30, via whereby.com.
+
+### Ce qu'on a fait
+
+- utilisation de la Console Web pour afficher des messages et visualiser des variables
+- jeu avec les tableaux (listes), les objets et les fonctions JavaScript
+- des boucles sur des listes, nommer des variables dans une fonction !
+- transposition de l'utilisation des structures de données avec les marqueurs
+- planter le navigateur avec des milliers de points affichés sur la carte 😅
+
+### Tu repars avec quoi ?
+
+- des points sur la carte !
+- plus de connaissances sur comment ça marche une liste, un objet, comment jouer avec et comment faire une boucle, et c'est quoi une fonction
+- quand je regarde le code qu'on a copié/collé, je comprends davantage de choses — c'est encore un peu obscur les fetch()/then()/catch()
+- je comprends tout ce qu'il y a écrit dans la boucle d'affichage des marqueurs
+- je suis contente de repartir avec un exercice concret — les clusters de marqueurs
+- j'ai bien compris ce que c'est `console.log()` — afficher ce que je fais, c'est moins obscur, je peux tester tout ce que j'écris, et que ça rend bien ce que je veux
+
+### Tu te situes où ?
+
+> Y'a encore grave du taf pour que ça ressemble ce à quoi ça ressemble.
+> J'anticipe déjà tous les trucs qui vont être moches, il va falloir changer les couleurs, les différents niveaux de popin.
+
+→ Je commencerai à toucher un truc quand je pourrai cliquer sur un point — là on a perdu l'interactivité parce qu'il y a trop de points.
+
 ## Session 3 — 13 février 2020
 
 Jeudi 13 février de 10h20 à 12h45, via whereby.com.
