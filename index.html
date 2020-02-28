@@ -18,6 +18,98 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(mymap);
 
-var marker = L.marker([44.47753430752894, 5.976765156033241]).addTo(mymap)
-    .bindPopup('L\'école mystère.<br> Youpi.')
+// var marker = L.marker([44.47753430752894, 5.976765156033241]).addTo(mymap)
+//     .bindPopup('L\'école mystère.<br> Youpi.')
+
+
+
+fetch('fr-en-annuaire-education.geojson')
+  .then(function(response) {
+    return response.json();
+  })
+
+  // on garde les features qui ont quelque chose de défini dans "properties.position"
+  .then(function(json) {
+    return json.features.filter(function(school){
+      return school.properties.position
+    })
+  })
+
+// on lit le fichier trié
+  .then(function(features) {
+    for(var i = 0; i < features.length; i++) {
+      var school = features[i];
+
+      var marker = L.marker(school.properties.position).addTo(mymap)
+        .bindPopup(school.properties.nom_etablissement)
+
+    }
+})
+
 </script>
+
+
+<!--
+    var school = {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2489218741066368,
+          44.21049021173528
+        ]
+      },
+      "properties": {
+        "date_ouverture": "1967-03-09",
+        "ministere_tutelle": "MINISTERE DE L'EDUCATION NATIONALE",
+        "statut_public_prive": "Public",
+        "libelle_region": "Nouvelle-Aquitaine",
+        "telephone": "0558090714",
+        "date_maj_ligne": "2020-01-25",
+        "hebergement": 0,
+        "libelle_nature": "ECOLE DE NIVEAU ELEMENTAIRE",
+        "ecole_elementaire": 1,
+        "etat": "OUVERT",
+        "type_etablissement": "Ecole",
+        "rpi_concentre": 0,
+        "identifiant_de_l_etablissement": "0400219W",
+        "code_region": "75",
+        "ulis": 0,
+        "restauration": 1,
+        "ecole_maternelle": 1,
+        "coordy_origine": 6354852.6,
+        "siren_siret": "21400184400049",
+        "mail": "ce.0400219W@ac-bordeaux.fr",
+        "nom_circonscription": "Circonscription d'inspection du 1er degré de Mimizan Pays de Born",
+        "nom_commune": "Mimizan",
+        "adresse_3": "40200 MIMIZAN",
+        "adresse_1": "Allée Pont Rouge",
+        "nombre_d_eleves": 95,
+        "code_commune": "40184",
+        "latitude": 44.21049021173528,
+        "position": [
+          44.21049021173528,
+          -1.2489218741066368
+        ],
+        "precision_localisation": "ENTREE PRINCIPALE",
+        "multi_uai": 0,
+        "type_contrat_prive": "SANS OBJET",
+        "code_postal": "40200",
+        "libelle_departement": "Landes",
+        "code_academie": "04",
+        "libelle_academie": "Bordeaux",
+        "longitude": -1.2489218741066368,
+        "nom_etablissement": "Ecole primaire Bel Air",
+        "epsg_origine": "EPSG:2154",
+        "pial": "0400105X",
+        "code_nature": 151,
+        "code_departement": "40",
+        "code_type_contrat_prive": 99,
+        "coordx_origine": 360632.4
+      }
+    };
+
+var marker = L.marker(school.properties.position).addTo(mymap)
+  .bindPopup(school.properties.nom_etablissement)
+
+-->
