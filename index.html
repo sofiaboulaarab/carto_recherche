@@ -43,7 +43,9 @@ fetch('fr-en-annuaire-education.geojson')
 // on lit le fichier trié
   .then(function(features) {
 // j'essaye d'intégrer le groupe ici
-    var markers = L.markerClusterGroup();
+    var markers = L.markerClusterGroup({
+      	showCoverageOnHover: false,
+});
 
       for(var i = 0; i < features.length; i++) {
       var school = features[i];
