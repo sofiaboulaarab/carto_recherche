@@ -9,8 +9,8 @@
 
 <!-- J'ai appelé le plugin markercluster -->
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-<link(type='text/css', rel='stylesheet', href='/stylesheets/MarkerCluster.css')/>
-<link(type='text/css', rel='stylesheet', href='/stylesheets/MarkerCluster.Default.css')/>
+<link type='text/css' rel='stylesheet' href="MaskerCluster.css"/>
+<link type='text/css' rel='stylesheet' href="MarkerCluster.Default.css"/>
 
 <!-- FIN DU HEADER -->
 
@@ -48,7 +48,7 @@ fetch('fr-en-annuaire-education.geojson')
       for(var i = 0; i < features.length; i++) {
       var school = features[i];
 
-      var marker = L.marker(school.properties.position).addTo(mymap)
+      var marker = L.marker(school.properties.position)
         .bindPopup(school.properties.nom_etablissement)
 
         // puis celui-ci
