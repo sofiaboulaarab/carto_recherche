@@ -12,6 +12,7 @@
 <link(type='text/css', rel='stylesheet', href='/stylesheets/MarkerCluster.css')/>
 <link(type='text/css', rel='stylesheet', href='/stylesheets/MarkerCluster.Default.css')/>
 
+<!-- FIN DU HEADER -->
 
 
 <h1>Carto recherche</h1>
@@ -41,7 +42,7 @@ fetch('fr-en-annuaire-education.geojson')
 
 // on lit le fichier trié
   .then(function(features) {
-// j'essayer d'intégrer le groupe ici
+// j'essaye d'intégrer le groupe ici
     var markers = L.markerClusterGroup();
 
       for(var i = 0; i < features.length; i++) {
@@ -53,6 +54,7 @@ fetch('fr-en-annuaire-education.geojson')
         // puis celui-ci
         markers.addLayer(marker);
     }
+    // puis celui-ci
     mymap.addLayer(markers);
 
 })
