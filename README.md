@@ -29,7 +29,7 @@ npx serve
 
 - [csvlook](https://csvkit.readthedocs.io/en/latest/scripts/csvlook.html)
 - [csvstat](https://csvkit.readthedocs.io/en/latest/scripts/csvstat.html)
-- jq '.' fr-en-annuaire-education.geojson | less
+- `jq '.' fr-en-annuaire-education.geojson | less`
 
 ### HTML
 
