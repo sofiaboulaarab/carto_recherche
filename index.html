@@ -29,15 +29,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 fetch('fr-en-annuaire-education.geojson')
-  .then(function(response) {
+  .then(function(response) { // je nomme la fonction "response"
     return response.json();
   })
 
-// est-ce qu'on aurait pu mettre school ici ? est-ce que school n'aurait pas juste du s'appeler features ?
 // on garde les features qui ont quelque chose de défini dans "properties.position"
-  .then(function(json) { // json ? redondance ?? avec le json en tant que type de fichier / code
-    return json.features.filter(function(school){ //feature ? features ? plutôt que school ? ici school n'est pas pas défini donc pourquoi ça marche ?
-      return school.properties.position
+  .then(function(featurecollection) { // c'est le typ d'objet que je manipule - json format - FeatureCollection c'est l'objet
+    return featurecollection.features.filter(function(feature){ //feature ? features ? plutôt que school ? ici school n'est pas pas défini donc pourquoi ça marche ?
+      return feature.properties.position
     })
   })
 
@@ -45,22 +44,22 @@ fetch('fr-en-annuaire-education.geojson')
   .then(function(features) {
 // j'essaye d'intégrer le groupe ici
     var markers = L.markerClusterGroup({
-      	showCoverageOnHover: false,
-        });
+    	showCoverageOnHover: false,
+    });
 
-      for(var i = 0; i < features.length; i++) {
-      var school = features[i]; // est-ce que je pourrai écrire var features[i] ?
+    for(var i = 0; i < features.length; i++) {
+      var feature = features[i]; // feature = 1 objet de features
 
-      var marker = L.marker(school.properties.position)
-        .bindPopup(school.properties.nom_etablissement)
+      var marker = L.marker(feature.properties.position)
+        .bindPopup(feature.properties.nom_etablissement)
 
         // puis celui-ci
         markers.addLayer(marker);
     }
+
     // puis celui-ci
     mymap.addLayer(markers);
-
-})
+  })
 
 
 </script>
