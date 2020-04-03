@@ -10,9 +10,34 @@ Journal d'apprentissage.
 > Identifier les typologies d'établissement de l'éducation nationale, hors éducation nationale
 > Exemple e-carto, banque des territoires : une carte centrée sur la France, avec les filtres, des points sur la carte.
 
+
 ## Session 5 — 20 mars 2020
 
-Vendredi 20 mars de 9h00 à 11h30, via whereby.com.
+Vendredi 20 mars de 8h30 à 11h55, via whereby.com.
+
+### Ce qu'on a fait
+
+- Lire le code de Sofia qui intègre [Leaflet MarkerCluster](https://github.com/Leaflet/Leaflet.markercluster/)
+- Afficher tous les marqueurs sur la carte !
+- Jouer avec les priorités CSS
+- Utilisation de l'inspecteur web pour comprendre les règles qui s'appliquent ou pas
+- Changer la taille et la couleur des clusters
+- Changer la hauteur de ligne des clusters
+
+### Tu repars avec quoi ?
+
+- Avec une carte qui commence à être sympa !
+- Des points qui s'affichent, bien
+- Un peu de compréhension de CSS
+- Du travail pour la prochaine fois, concret, et on revient dans un truc que je connais (UX)
+
+### Actions pour la prochaine fois
+
+- Fermer le projet [Itération 0](https://github.com/sofiaboulaarab/carto_recherche/projects/1)
+- Crée un projet _Itération 1_
+- Changer les marqueurs par défaut de Leaflet pour quelque chose de plus joli
+- Alimenter le projet avec des choses à construire qui répondent au besoin du MVP — à la fin, on montre quelque chose à quelqu'un
+- Veiller aux moments où il y a décrochage — concurrence entre le besoin de comprendre et l'envie d'avancer (rapidement)
 
 ## Session 4 — 28 février 2020
 

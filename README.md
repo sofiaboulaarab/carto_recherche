@@ -30,8 +30,14 @@ npx serve
 - [csvlook](https://csvkit.readthedocs.io/en/latest/scripts/csvlook.html)
 - [csvstat](https://csvkit.readthedocs.io/en/latest/scripts/csvstat.html)
 
+### HTML
+
+- [Toutes les balises HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+- [Balise `<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
+- [Balise `<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
 
 ### CSS
 
+- priorité des sélecteurs : [article sur openweb.eu](https://openweb.eu.org/articles/cascade_css), [sur MDN](https://developer.mozilla.org/fr/docs/CSS/Premiers_pas/Les_s%C3%A9lecteurs)
 - [propriété `border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 - [propriété `height`](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
