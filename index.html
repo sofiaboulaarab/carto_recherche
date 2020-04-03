@@ -2,10 +2,10 @@
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
 
-<!-- Make sure you put this AFTER Leaflet's CSS -->
-<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
- integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
- crossorigin=""></script>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
 
 <!-- J'ai appelé le plugin markercluster -->
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
@@ -33,9 +33,10 @@ fetch('fr-en-annuaire-education.geojson')
     return response.json();
   })
 
-  // on garde les features qui ont quelque chose de défini dans "properties.position"
-  .then(function(json) {
-    return json.features.filter(function(school){
+// est-ce qu'on aurait pu mettre school ici ? est-ce que school n'aurait pas juste du s'appeler features ?
+// on garde les features qui ont quelque chose de défini dans "properties.position"
+  .then(function(json) { // json ? redondance ?? avec le json en tant que type de fichier / code
+    return json.features.filter(function(school){ //feature ? features ? plutôt que school ? ici school n'est pas pas défini donc pourquoi ça marche ?
       return school.properties.position
     })
   })
@@ -45,10 +46,10 @@ fetch('fr-en-annuaire-education.geojson')
 // j'essaye d'intégrer le groupe ici
     var markers = L.markerClusterGroup({
       	showCoverageOnHover: false,
-});
+        });
 
       for(var i = 0; i < features.length; i++) {
-      var school = features[i];
+      var school = features[i]; // est-ce que je pourrai écrire var features[i] ?
 
       var marker = L.marker(school.properties.position)
         .bindPopup(school.properties.nom_etablissement)
@@ -116,7 +117,7 @@ fetch('fr-en-annuaire-education.geojson')
         "code_commune": "40184",
         "latitude": 44.21049021173528,
         "position": [
-          44.21049021173528,
+          44.21049 021173528,
           -1.2489218741066368
         ],
         "precision_localisation": "ENTREE PRINCIPALE",
