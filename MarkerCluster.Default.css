@@ -5,6 +5,10 @@
 		</div>
 	</div>
  */
+.marker-color {
+   fill : rgb(181, 226, 140);
+ }
+
 
 /* <div class="marker-cluster ..."> */
 .marker-cluster {
