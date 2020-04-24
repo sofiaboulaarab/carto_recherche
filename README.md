@@ -24,6 +24,8 @@ npx serve
 - [Les tableaux](https://oncletom.io/node.js/chapter-03/#array)
 - [Les objets](https://oncletom.io/node.js/chapter-03/#object)
 - [`console.log()`](https://developer.mozilla.org/fr/docs/Web/API/Console)
+- [`JSON.stringify()`](https://developer.mozilla.org/fr/docs/Web/API/Console),
+  pour transformer une variable JavaScript en une représentation textuelle au format JSON.
 
 ### Inspecter les données
 
@@ -36,6 +38,8 @@ npx serve
 - [Toutes les balises HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [Balise `<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 - [Balise `<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+- [Balise `<details>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/details)
+- [Balise `<pre>`](https://developer.mozilla.org/fr/docs/Web/HTML/Element/pre)
 
 ### CSS
 

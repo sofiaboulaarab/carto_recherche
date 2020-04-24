@@ -11,7 +11,34 @@ Journal d'apprentissage.
 > Exemple e-carto, banque des territoires : une carte centrée sur la France, avec les filtres, des points sur la carte.
 
 
+## Session 6 - 3 avril 2020
+
+Vendredi 20 mars de 9h00 à 11h30, via whereby.com.
+
 ## Session 5 — 20 mars 2020
+
+### Ce qu'on a fait
+
+- Relecture, affinage et priorisation d'un [nouveau backlog](https://github.com/sofiaboulaarab/carto_recherche/projects/2)
+- Inspection de nos données GeoJSON
+- Discussion des solutions de services/fonds de carte/outils de cartographies
+- Clarification du nommage des variables passées en paramètres de fonctions
+- Modification du pictogramme de localisation, pour un nouveau en SVG exporté de Figma
+- Affichage du détail d'un objet JavaScript, dans la popin d'établissement
+- Ajustement des CSS des MarkerClusters
+
+### Tu repars avec quoi ?
+
+- je suis très contente parce que j'ai l'impression que j'ai mieux
+  compris ce que — en tant qu'humaine — je nomme arbitrairement, ou explicitement.
+  En expliquant mon code à Laurent ça m'a permis de me rendre compte de ce
+  je savais expliquer ou non.
+- je repars avec des points sur la carte, avec de vraies modifications :
+  le picto, sur la partie fonctionnelle et plus proche de ce que l'utilisateur va manipuler
+- des choses à faire pour la prochaine fois — un projet concret
+- la prochaine fois on va avoir une vraie vision sur ce qu'on a vraiment !
+  Je suis curieuse de découvrir ce qu'on va voir.
+- On commence à dégager un usage, c'est stylé.
 
 Vendredi 20 mars de 8h30 à 11h55, via whereby.com.
 
