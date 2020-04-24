@@ -1,4 +1,3 @@
-#
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
@@ -69,7 +68,7 @@ fetch('fr-en-annuaire-education.geojson')
       var html = properties.nom_etablissement + "<br> " + properties.adresse_1 + ", " + properties.adresse_3
       //var html = `${properties.nom_etablissement} de ...`
 
-    if (properties.ULIS === "1") {
+    if (properties.ulis === 1) {
       var marker = L.marker(feature.properties.position,{icon: myiconU})
         .bindPopup(html)
         markers.addLayer(marker);
@@ -79,7 +78,7 @@ fetch('fr-en-annuaire-education.geojson')
       var marker = L.marker(feature.properties.position,{icon: myiconN})
       .bindPopup(html)
       markers.addLayer(marker);
-      }
+        }
 
     }
     mymap.addLayer(markers);
