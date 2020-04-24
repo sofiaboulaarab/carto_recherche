@@ -2,10 +2,10 @@
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
 
-   <!-- Make sure you put this AFTER Leaflet's CSS -->
-   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
 
 <!-- J'ai appelé le plugin markercluster -->
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
@@ -47,29 +47,21 @@ fetch('fr-en-annuaire-education.geojson')
       return feature.properties.position
     })
   })
-
 // on lit le fichier trié
   .then(function(features) {
-// j'essaye d'intégrer le groupe ici
     var markers = L.markerClusterGroup({
     	showCoverageOnHover: false,
     });
-
     for(var i = 0; i < features.length; i++) {
       var feature = features[i]; // feature = 1 objet de features
-
       var marker = L.marker(feature.properties.position,{icon: myicon})
         .bindPopup('<pre>' + JSON.stringify(feature.properties, null, 2) + '</pre>')
-
-        // puis celui-ci
         markers.addLayer(marker);
     }
-
-    // puis celui-ci
     mymap.addLayer(markers);
   })
 
-
+// question pour thomas > comment tu indenterais ces lignes de code ?
 </script>
 
 
