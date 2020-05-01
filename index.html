@@ -67,14 +67,9 @@ fetch('fr-en-annuaire-education.geojson')
       var properties = feature.properties
       var html = properties.nom_etablissement + "<br> " + properties.adresse_1 + ", " + properties.adresse_3
       //var html = `${properties.nom_etablissement} de ...`
+      var estInclusive = properties.ulis === 1 || properties.segpa === 1
 
-    if (properties.ulis === 1) {
-      var marker = L.marker(feature.properties.position,{icon: myiconU})
-        .bindPopup(html)
-        markers.addLayer(marker);
-        }
-
-    if (properties.segpa === 1) {
+    if (estInclusive) {
       var marker = L.marker(feature.properties.position,{icon: myiconU})
         .bindPopup(html)
         markers.addLayer(marker);
