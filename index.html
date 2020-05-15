@@ -61,6 +61,7 @@ fetch('fr-en-annuaire-education.geojson')
   .then(function(features) {
     var markers = L.markerClusterGroup({
     	showCoverageOnHover: false,
+      maxClusterRadius: 40,
     });
     for(var i = 0; i < features.length; i++) {
       var feature = features[i]; // feature = 1 objet de features
@@ -75,11 +76,11 @@ fetch('fr-en-annuaire-education.geojson')
         markers.addLayer(marker);
         }
 
-    else {
-      var marker = L.marker(feature.properties.position,{icon: myiconN})
-      .bindPopup(html)
-      markers.addLayer(marker);
-        }
+    // else {
+    //   var marker = L.marker(feature.properties.position,{icon: myiconN})
+    //   .bindPopup(html)
+    //   markers.addLayer(marker);
+    //     }
 
     }
     mymap.addLayer(markers);
