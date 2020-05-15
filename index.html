@@ -64,8 +64,8 @@ fetch('fr-en-annuaire-education.geojson')
     });
     for(var i = 0; i < features.length; i++) {
       var feature = features[i]; // feature = 1 objet de features
-      var properties = feature.properties
-      var html = properties.nom_etablissement + "<br> " + properties.adresse_1 + ", " + properties.adresse_3
+      var properties = { nom_etablissement: '', adresse_1: '', adresse_3: '', ...feature.properties }
+      var html = "<div class='nom_etablissement'>" + properties.nom_etablissement.toLocaleLowerCase() + "</div>" + "<div class='adresse'>" + properties.adresse_1.toLocaleLowerCase() + ", " + properties.adresse_3.toLocaleLowerCase() + "</div>"
       //var html = `${properties.nom_etablissement} de ...`
       var estInclusive = properties.ulis === 1 || properties.segpa === 1
 
