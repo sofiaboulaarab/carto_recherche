@@ -10,6 +10,43 @@ Journal d'apprentissage.
 > Identifier les typologies d'établissement de l'éducation nationale, hors éducation nationale
 > Exemple e-carto, banque des territoires : une carte centrée sur la France, avec les filtres, des points sur la carte.
 
+## Session 8 - 1er mai 2020
+
+Vendredi 1er mai de 9h00 à 12h30, via whereby.com.
+
+### Ce qu'on a fait
+
+[Bac à sable de la session](https://jsfiddle.net/oncletom/Lwg1ta7h/).
+
+- afficher plusieurs `<img>`, et les styler différemment
+- styler le contenu d'un SVG — `fill`, `stroke` avec CSS `color` et `fill`, parfois avec la valeur `currentColor`
+- jouer avec l'imbrication d'un document, la précision des sélecteurs CSS, la cascade et ses priorités
+- combiner/retirer des classes pour jouer avec leurs effets de bord
+
+### Tu repars avec quoi ?
+
+- meilleure compréhension de CSS
+- je comprends mieux les éléments autonomes (le début et la fin des choses, une balise image, ce que je peux déclarer dans mon HTML, comment appeler telle ou telle classe)
+- c'est plus facile d'intégrer des boites dans des boites quand tu en discernes les contours
+- l'aspect métier : lier les données au HTML, et appliquer des styles graphiques, les questions que je peux poser au(x) développeurs (les filtres, des composants), quand/où engager le dialogue sur des spécifications
+- comprendre la complexité du boulot de dev pour anticiper le dialogue ; comment engager un
+- qu'est-ce qui est coûteux en dev vs. ce qui ne l'est pas — alors que la feature a une faible valeur
+- ça m'aide à me poser des questions sur mon expertise, sur les données et des expériences passées — pourquoi ça aurait marché, et pas marché, avec quoi on design, la frontière entre vision et code, le lien entre le visuel et l'abstraction (les données)
+- trop cool JSFiddle, plus agréable que la console, plus intuitif, je m'y suis sentie plus libre, moins peur de casser, moins de machinerie
+
+
+## Session 7 - 24 avril 2020
+
+Vendredi 20 mars de 9h00 à 11h30, via whereby.com.
+
+### Ce qu'on a fait
+
+- afficher le nom de l'établissement dans la popin
+- utiliser une icône différenciante pour les établissements segpa/ulis
+
+### Tu repars avec quoi ?
+
+- beaucoup de confusion sur où je code quoi
 
 ## Session 6 - 3 avril 2020
 
