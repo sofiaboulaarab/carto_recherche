@@ -1,0 +1,55 @@
+/*
+	<div class="marker-cluster marker-cluster-{small,large,medium}" style="height:....; width: ...">
+		<div>
+			<span>123</span>
+		</div>
+	</div>
+ */
+.marker-color {
+   fill : rgb(181, 226, 140);
+ }
+
+
+/* <div class="marker-cluster ..."> */
+.marker-cluster {
+ 	background-clip: padding-box;
+ 	border-radius: 100%;
+ }
+
+.marker-cluster {
+	background-color: rgba(181, 226, 140, 0.6);
+}
+
+	/* <div class="marker-cluster"> → <div> */
+	.marker-cluster div {
+		width: 30px;
+		height: 30px;
+		margin-left: 5px;
+		margin-top: 5px;
+
+		text-align: center;
+		border-radius: 100%;
+		font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+	}
+	.marker-cluster div {
+		background-color: rgba(110, 204, 57, 0.6);
+	}
+
+	/* <div class="marker-cluster"> → <div> → <span> */
+	.marker-cluster span {
+		line-height: 30px;
+	}
+
+  .nom_etablissement
+{
+  color: blue;
+  font-size : 20px;
+  text-transform: capitalize;
+}
+
+.adresse
+{
+  color: black;
+  font-size : 12px;
+  text-transform: capitalize;
+}

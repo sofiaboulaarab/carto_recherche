@@ -1,0 +1,18 @@
+I"z<h1>Carto Inclusion</h1>
+<h2>A propos du projet</h2>
+
+<p><a href="index.html"> Accueil </a>
+<a href="apropos.html"> A propos </a></p>
+
+<h2 id="section-1">Section 1</h2>
+<p>Lorem ipsum ……</p>
+
+<h2 id="section-2">Section 2</h2>
+<h3 id="sous-section-2">Sous-section 2</h3>
+<p>Lorem ipsum ……</p>
+
+<footer>
+  <a href="mentionslegales.html"> Mentions légales </a>
+</footer>
+
+:ET
